@@ -1,1 +1,406 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>Marketing Apprenticeship | 8-Week Learning Guide</title><style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap');
+:root{--paper:#fff8ed;--ink:#151515;--red:#c91f16;--yellow:#ffe27a;--line:rgba(21,21,21,.25)}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif}.top{height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(16px,4vw,54px);border-bottom:2px solid var(--ink);font:700 12px 'Oswald';letter-spacing:.12em;text-transform:uppercase;gap:12px}.top small{font:700 11px 'DM Sans';letter-spacing:.08em}.progress{height:5px;background:#eadfce}.progress span{display:block;height:100%;width:0;background:var(--red);transition:width .2s}.page{display:none;min-height:calc(100vh - 63px);padding:clamp(22px,5vw,66px);animation:enter .25s ease}.page.active{display:block}@keyframes enter{from{opacity:.4;transform:translateY(5px)}to{opacity:1;transform:none}}.heroPage{background:var(--red);color:var(--paper)}.heroLayout,.weekLayout{display:grid;grid-template-columns:1fr .85fr;gap:clamp(24px,5vw,72px);align-items:center;max-width:1440px;margin:auto;min-height:calc(100vh - 190px)}.eyebrow{font:600 12px 'Oswald';letter-spacing:.2em;text-transform:uppercase}.heroPage h1{font:700 clamp(58px,10vw,142px)/.83 'Space Grotesk';letter-spacing:-.09em;margin:28px 0;max-width:850px}.heroPage h1 em{font-style:normal;color:var(--yellow)}.heroPage p{font-size:clamp(17px,2vw,22px);line-height:1.5;max-width:580px}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}.tag{border:1.5px solid currentColor;border-radius:99px;padding:9px 12px;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.imageSlot{min-height:400px;aspect-ratio:4/5;border:2px dashed currentColor;display:flex;align-items:center;justify-content:center;text-align:center;padding:26px;position:relative;background:rgba(255,255,255,.07);overflow:hidden}.imageSlot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.slotInner{max-width:250px;position:relative;z-index:1}.slotIcon{font-size:64px;line-height:1;display:block;margin-bottom:18px}.slotInner b{display:block;font:600 22px 'Space Grotesk';margin-bottom:8px}.slotInner small{display:block;font-size:12px;line-height:1.5;opacity:.8}.weekLayout{align-items:stretch}.weekCopy{display:flex;flex-direction:column;align-items:flex-start;padding:clamp(4px,1vw,18px) 0}.weekTop{display:flex;align-items:center;gap:14px}.weekNo{font:700 clamp(54px,7vw,88px)/.85 'Oswald';letter-spacing:-.06em}.weekLabel{border:1.5px solid var(--ink);border-radius:99px;padding:8px 11px;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.weekCopy h2{font:700 clamp(38px,5.3vw,74px)/.92 'Space Grotesk';letter-spacing:-.075em;margin:32px 0 18px;max-width:740px}.weekCopy .intro{font-size:clamp(16px,1.5vw,20px);line-height:1.5;max-width:640px;margin:0 0 26px}.learnLabel{font:700 11px 'Oswald';letter-spacing:.15em;text-transform:uppercase;margin:0 0 12px}.learnList{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:9px 18px;width:100%;max-width:700px}.learnList li{font-size:14px;font-weight:600;line-height:1.35;border-top:1px solid var(--line);padding:11px 0;display:flex;gap:9px}.learnList li:before{content:'↗';font-weight:800}.weekVisual{display:flex;align-items:center;justify-content:center;position:relative}.weekVisual .imageSlot{width:100%;min-height:480px;aspect-ratio:4/5;color:var(--ink);background:rgba(255,255,255,.2);border-color:rgba(21,21,21,.6);box-shadow:10px 10px 0 var(--ink);transform:rotate(1deg)}.pageBottom{display:flex;align-items:center;justify-content:space-between;gap:16px;max-width:1440px;margin:34px auto 0;border-top:1.5px solid var(--line);padding-top:18px}.pageBottom small{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.nav{display:flex;gap:8px}.nav button{border:1.5px solid var(--ink);background:var(--paper);color:var(--ink);padding:11px 16px;font-weight:800;border-radius:99px}.nav button.next{background:var(--ink);color:white}.nav button:disabled{opacity:.3;cursor:default}.onboard{background:#b8e0ff}.onboard .weekVisual .imageSlot{background:rgba(255,255,255,.3)}.collab{background:#151515;color:var(--paper)}.collab h2{font:700 clamp(42px,7vw,92px)/.9 'Space Grotesk';letter-spacing:-.08em;margin:25px 0}.collab h2 em{color:var(--yellow);font-style:normal}.collab p{font-size:18px;line-height:1.55;max-width:680px}.collab .imageSlot{color:var(--paper)}.collab .weekLabel{border-color:var(--paper)}.collab .pageBottom{border-color:#666}.collab .nav button{border-color:var(--paper)}.collab .nav button.next{background:var(--yellow);color:var(--ink);border-color:var(--yellow)}.finalPage{background:var(--yellow)}.finalPage h2{font:700 clamp(48px,8vw,110px)/.88 'Space Grotesk';letter-spacing:-.09em;margin:24px 0;max-width:900px}.outcomes{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:30px;max-width:760px}.outcomes div{border:1.5px solid var(--ink);padding:15px;font-weight:800}.hint{font-size:11px;opacity:.7;margin-top:12px}
+@media(max-width:760px){.heroLayout,.weekLayout{grid-template-columns:1fr;min-height:auto}.heroPage .imageSlot{min-height:270px;aspect-ratio:16/9}.weekVisual .imageSlot{min-height:280px;aspect-ratio:4/3}.weekCopy h2{margin-top:24px}.learnList{grid-template-columns:1fr}.page{padding:24px 18px}.pageBottom{align-items:flex-start;flex-direction:column}.pageBottom .nav{width:100%;justify-content:space-between}.nav button{flex:1}.top small{display:none}.outcomes{grid-template-columns:1fr}}
 
+/* Full-screen presentation pass: each page is composed to fit the visible browser canvas. */
+@media (min-width:761px){
+  html,body{height:100%;overflow:hidden}
+  .top{height:48px;min-height:48px;padding-top:0;padding-bottom:0}
+  .progress{height:4px}
+  .page{height:calc(100vh - 52px);min-height:0;padding:3.2vh 4.2vw;overflow:hidden;}
+  .heroLayout,.weekLayout{height:calc(100% - 54px);min-height:0;max-width:1500px;gap:clamp(24px,4vw,64px)}
+  .heroPage h1{font-size:clamp(54px,7.3vw,108px);margin:20px 0;line-height:.86}
+  .heroPage p{font-size:clamp(15px,1.35vw,19px);line-height:1.4;margin:14px 0}
+  .tags{margin-top:18px}
+  .imageSlot{min-height:0;height:min(68vh,650px);aspect-ratio:4/5;padding:20px}
+  .weekVisual .imageSlot{min-height:0;height:min(68vh,650px);aspect-ratio:4/5;transform:none}
+  .weekCopy h2{font-size:clamp(34px,4.3vw,64px);margin:20px 0 14px;line-height:.94}
+  .weekCopy .intro{font-size:clamp(14px,1.25vw,18px);line-height:1.4;margin-bottom:18px}
+  .learnList{gap:6px 14px}
+  .learnList li{font-size:clamp(12px,.98vw,14px);padding:8px 0;line-height:1.28}
+  .weekNo{font-size:clamp(48px,5vw,72px)}
+  .pageBottom{margin-top:10px;padding-top:10px}
+  .pageBottom small{font-size:10px}
+  .nav button{padding:9px 13px;font-size:12px}
+  .collab h2{font-size:clamp(38px,5.5vw,78px)}
+  .collab p{font-size:clamp(14px,1.25vw,17px);line-height:1.4;margin:12px 0}
+  .finalPage h2{font-size:clamp(44px,6.2vw,88px)}
+  .outcomes{margin-top:18px;gap:8px}
+  .outcomes div{padding:11px;font-size:14px}
+}
+@media (max-height:760px) and (min-width:761px){
+ .page{padding-top:2.2vh;padding-bottom:2.2vh}
+ .heroLayout,.weekLayout{height:calc(100% - 46px)}
+ .imageSlot,.weekVisual .imageSlot{height:62vh}
+ .weekCopy h2{font-size:clamp(32px,3.7vw,54px);margin:14px 0 10px}
+ .weekCopy .intro{margin-bottom:12px}
+ .learnList li{padding:6px 0}
+ .pageBottom{margin-top:6px;padding-top:7px}
+}
+</style>
+<style>
+/* Interactive transformation slide */
+.journeyPage{background:#1559ff;color:#fff}
+.journeyPage .journeyLayout{max-width:1450px;margin:auto;min-height:calc(100% - 54px);height:calc(100% - 54px);display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(24px,4vw,64px);align-items:center}
+.journeyPage h2{font:700 clamp(42px,6.3vw,88px)/.88 'Space Grotesk';letter-spacing:-.085em;margin:20px 0;max-width:700px}
+.journeyPage h2 em{font-style:normal;color:var(--yellow)}
+.journeyPage .journeyLead{font-size:clamp(15px,1.4vw,20px);line-height:1.45;max-width:580px}
+.journeyStage{background:var(--paper);color:var(--ink);border:2px solid var(--ink);box-shadow:12px 12px 0 var(--ink);padding:clamp(18px,2.6vw,36px);min-height:420px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.stageTop{display:flex;justify-content:space-between;gap:10px;align-items:center;font:700 11px 'Oswald';letter-spacing:.12em;text-transform:uppercase}
+.stageCount{background:var(--yellow);border:1.5px solid var(--ink);padding:8px 10px}
+.stageScene{display:grid;grid-template-columns: .8fr 1.2fr;gap:20px;align-items:center;margin:22px 0}
+.stagePerson{height:210px;position:relative;display:flex;align-items:center;justify-content:center;background:#f2e9d8;border:2px solid var(--ink);overflow:hidden}
+.personHead{width:90px;height:100px;border-radius:48% 48% 44% 44%;background:#9b5d3b;border:3px solid var(--ink);position:relative;z-index:2;transition:transform .25s}
+.personHair{position:absolute;z-index:3;top:28px;width:100px;height:40px;background:#171717;border-radius:50% 50% 18% 18%;transition:transform .25s}
+.personBody{position:absolute;width:150px;height:110px;bottom:-45px;border-radius:45% 45% 0 0;background:#ff5a1f;border:3px solid var(--ink);z-index:1;transition:background .25s,transform .25s}
+.personEyes{position:absolute;top:38px;left:20px;right:20px;display:flex;justify-content:space-between;z-index:4}.personEyes i{display:block;width:8px;height:10px;border-radius:50%;background:#111}.personMouth{position:absolute;z-index:4;left:50%;top:66px;transform:translateX(-50%);width:24px;height:12px;border-bottom:3px solid #111;border-radius:50%;transition:all .25s}
+.personSpark{position:absolute;font-size:28px;font-weight:900;opacity:0;transition:opacity .2s}.sparkA{top:20px;right:18px}.sparkB{left:15px;bottom:28px}
+.stageWords h3{font:700 clamp(26px,3vw,42px)/.95 'Space Grotesk';letter-spacing:-.06em;margin:0 0 12px}.stageWords p{font-size:14px;line-height:1.45;margin:0;max-width:420px}.stageTags{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}.stageTags span{border:1.5px solid var(--ink);padding:7px 9px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.04em}
+.journeyControl{border-top:2px solid var(--ink);padding-top:18px}.journeyRange{width:100%;margin:8px 0 4px;accent-color:var(--red);cursor:ew-resize}.rangeEnds{display:flex;justify-content:space-between;font:700 10px 'Oswald';letter-spacing:.08em;text-transform:uppercase}.stageMarks{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-top:10px}.stageMarks button{height:8px;padding:0;border:1px solid var(--ink);background:#ddd4c6;cursor:pointer}.stageMarks button.active{background:var(--red)}.journeyFooter{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:16px}.journeyFooter strong{font:700 12px 'Oswald';letter-spacing:.08em;text-transform:uppercase}.journeyFooter button{border:1.5px solid var(--ink);background:var(--yellow);padding:10px 13px;font-weight:900;cursor:pointer}
+.journeyPage[data-stage="0"] .personHead{transform:translateY(10px) rotate(-7deg)}.journeyPage[data-stage="0"] .personMouth{top:72px;width:25px;height:15px;border-bottom:0;border-top:3px solid #111;border-radius:50%}.journeyPage[data-stage="0"] .personBody{background:#8d9aa6;transform:rotate(-5deg)}.journeyPage[data-stage="0"] .personEyes{top:48px}.journeyPage[data-stage="1"] .personMouth{width:20px;height:6px;border-bottom:2px solid #111}.journeyPage[data-stage="2"] .personBody{background:#ffe27a}.journeyPage[data-stage="2"] .personMouth{height:13px;border-bottom:3px solid #111}.journeyPage[data-stage="3"] .personBody{background:#bcebd0}.journeyPage[data-stage="3"] .personMouth{width:28px;height:16px;border-bottom:3px solid #111}.journeyPage[data-stage="4"] .personBody{background:#ff9d83}.journeyPage[data-stage="4"] .personMouth{width:30px;height:18px;border-bottom:4px solid #111}.journeyPage[data-stage="5"] .personBody{background:#83e34f}.journeyPage[data-stage="5"] .personHead{transform:translateY(-3px)}.journeyPage[data-stage="5"] .personMouth{width:32px;height:20px;border-bottom:4px solid #111}.journeyPage[data-stage="5"] .personSpark{opacity:1}
+@media(max-width:760px){.journeyPage .journeyLayout{grid-template-columns:1fr;height:auto;min-height:0}.journeyStage{min-height:0}.stageScene{grid-template-columns:1fr}.stagePerson{height:170px}.journeyPage{overflow:auto}.journeyPage .pageBottom{margin-top:20px}}
+@media(max-height:760px) and (min-width:761px){.journeyStage{min-height:0;padding:18px}.stageScene{margin:12px 0}.stagePerson{height:155px}.journeyPage h2{font-size:clamp(38px,4.6vw,64px)}.stageWords h3{font-size:clamp(24px,2.3vw,32px)}}
+</style>
+<style>
+.coverPhotoPage{position:relative;padding:0!important;overflow:hidden;background:#c91f16;height:calc(100vh - 52px);min-height:0}
+.coverPhotoPage .coverPhoto{display:block;width:100%;height:100%;object-fit:cover;object-position:center;background:#c91f16}
+body.cover-active{overflow:hidden}
+body.cover-active .top,body.cover-active .progress{display:none}
+body.cover-active .coverPhotoPage{height:100vh;width:100vw}
+body.cover-active .coverPhotoPage .coverPhoto{width:100%;height:100%;object-fit:cover;object-position:center}
+.coverPhotoNav{position:absolute;right:2.5%;bottom:2.5%;z-index:5}
+.coverPhotoNav button{border:2px solid #151515;border-radius:999px;padding:12px 18px;background:#ffe27a;color:#151515;font-weight:800;box-shadow:4px 4px 0 #151515;cursor:pointer}
+@media(max-width:760px){.coverPhotoPage{height:calc(100vh - 52px);min-height:0}.coverPhotoPage .coverPhoto{object-fit:contain}.coverPhotoNav{right:12px;bottom:12px}.coverPhotoNav button{font-size:12px;padding:9px 12px}}
+
+.coverPhotoPage{position:relative;isolation:isolate;background:#a90f0c;color:#fff;}
+.coverPhotoPage .coverPhoto{position:absolute;inset:0;z-index:-2;display:block;width:100%;height:100%;object-fit:cover;object-position:center;}
+.coverPhotoPage:after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,rgba(104,0,0,.24) 0%,rgba(104,0,0,.12) 43%,rgba(0,0,0,0) 65%);}
+.coverOverlay{position:absolute;left:4.8%;top:7.5%;width:min(48%,760px);z-index:2;color:#fff;}
+.coverEyebrow{font:700 12px 'DM Sans',sans-serif;letter-spacing:.25em;text-transform:uppercase;margin-bottom:30px;color:#fff;}
+.coverOverlay h1{font:800 clamp(44px,5.4vw,92px)/.91 'Space Grotesk',sans-serif;letter-spacing:-.075em;margin:0 0 22px;max-width:800px;color:#fff;text-wrap:balance;}
+.coverOverlay h1 span{color:#ffe27a;}
+.coverOverlay p{font:500 clamp(16px,1.55vw,23px)/1.35 'DM Sans',sans-serif;max-width:610px;margin:0 0 26px;color:#fff;}
+.coverPills{display:flex;flex-wrap:wrap;gap:10px;max-width:760px;}
+.coverPills .pill{display:inline-flex;align-items:center;gap:10px;padding:11px 17px;border-radius:999px;font:800 clamp(11px,.95vw,15px)/1 'DM Sans',sans-serif;white-space:nowrap;box-shadow:0 2px 0 rgba(0,0,0,.08);}
+.coverPills .pill b{font-size:19px;line-height:1;font-weight:700;}
+.pillResearch{background:#f1a5ed;color:#171717}.pillCreative{background:#ffe27a;color:#171717}.pillProjects{background:#4e8cf7;color:#101010}.pillProspecting{background:#087e69;color:#fff}.pillSprints{background:#fff8ed;color:#171717}
+.coverPhotoNav{position:absolute;right:2.5%;bottom:3%;z-index:5;}
+.coverPhotoNav button{border:2px solid #151515;border-radius:999px;padding:14px 22px;background:#ffe27a;color:#151515;font:800 15px 'DM Sans',sans-serif;box-shadow:4px 4px 0 #151515;cursor:pointer;}
+@media(max-width:760px){.coverPhotoPage{height:100vh!important;min-height:100vh!important}.coverPhotoPage .coverPhoto{object-position:58% center}.coverOverlay{left:6%;top:6%;width:88%;}.coverEyebrow{font-size:9px;letter-spacing:.18em;margin-bottom:18px}.coverOverlay h1{font-size:clamp(36px,10vw,58px);max-width:95%;margin-bottom:14px}.coverOverlay p{font-size:15px;max-width:85%;margin-bottom:17px}.desktopBreak{display:none}.coverPills{gap:7px;max-width:90%}.coverPills .pill{font-size:10px;padding:9px 11px;gap:6px}.coverPills .pill b{font-size:15px}.coverPhotoNav{right:14px;bottom:16px}.coverPhotoNav button{font-size:12px;padding:11px 14px}}
+@media(min-width:761px) and (max-height:700px){.coverOverlay{top:5%}.coverEyebrow{margin-bottom:16px}.coverOverlay h1{font-size:clamp(42px,5vw,70px);margin-bottom:14px}.coverOverlay p{font-size:16px;margin-bottom:16px}.coverPills .pill{padding:9px 13px}}
+
+</style>
+<style id="art-direction-pass">
+/* Strict art-direction pass: calm the page, let one image speak, remove decorative framing. */
+.imageSlot, .weekVisual .imageSlot {
+  border: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  overflow: hidden;
+  transform: none !important;
+}
+.imageSlot img {
+  object-fit: contain !important;
+  object-position: center;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+.slotInner { display: none !important; }
+.weekVisual { min-width: 0; }
+.weekVisual .imageSlot {
+  height: min(64vh, 610px) !important;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+}
+.weekCopy h2 { max-width: 660px; }
+.weekCopy .intro { max-width: 570px; }
+.learnList { gap: 4px 16px; }
+.learnList li { padding: 7px 0; }
+.pageBottom { border-top-width: 1px; }
+/* The cover and the final outcome are deliberately distinct hero moments. */
+.heroPage .heroLayout { display: none; }
+.heroPage { background-size: cover; background-position: center; }
+@media (max-width:760px) {
+  .weekVisual .imageSlot { height: auto !important; min-height: 0 !important; aspect-ratio: 4 / 3; }
+}
+</style>
+<style>
+/* Cohesive art direction: remove the coloured image cards; illustrations float on each page. */
+.imageSlot, .weekVisual .imageSlot, .onboard .weekVisual .imageSlot {
+ background:transparent !important; border:0 !important; box-shadow:none !important;
+ transform:none !important; padding:0 !important; overflow:visible !important;
+}
+.imageSlot img { object-fit:contain !important; }
+.visionScribble { width:100%; max-width:630px; height:auto; display:block; overflow:visible; }
+.visionCanvas { width:100%; }
+/* Closing slide is a real calendar across the page, not a picture beside a text list. */
+.calendarPage.active { display:flex; flex-direction:column; gap:clamp(8px,1.45vh,16px); }
+.calendarHead { display:flex; justify-content:space-between; align-items:flex-end; gap:22px; }
+.calendarTitleBlock { min-width:0; }
+.calendarTitleBlock h2 { font:700 clamp(36px,5.1vw,70px)/.88 'Space Grotesk'; letter-spacing:-.08em; margin:11px 0 0; }
+.calendarDeckNote { max-width:300px; font-size:clamp(11px,.95vw,14px); line-height:1.35; font-weight:600; }
+.calendarKickoff { border:1.5px solid var(--ink); display:flex; align-items:center; gap:12px; padding:9px 14px; font-size:clamp(11px,.9vw,13px); line-height:1.3; }
+.calendarKickoff strong { font:700 12px 'Oswald'; letter-spacing:.08em; text-transform:uppercase; white-space:nowrap; }
+.calendarGrid { flex:1; min-height:0; display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); grid-template-rows:repeat(2,minmax(0,1fr)); gap:clamp(8px,1vw,14px); }
+.calendarTile { border:1.5px solid var(--ink); padding:clamp(11px,1.25vw,18px); min-width:0; min-height:0; display:flex; flex-direction:column; overflow:hidden; }
+.calendarTile:nth-child(1){background:#ffb7d7}.calendarTile:nth-child(2){background:#c9b8ff}.calendarTile:nth-child(3){background:#ffe27a}.calendarTile:nth-child(4){background:#bcebd0}.calendarTile:nth-child(5){background:#b8e0ff}.calendarTile:nth-child(6){background:#ff9d83}.calendarTile:nth-child(7){background:#ffd9c7}.calendarTile:nth-child(8){background:#d8ef8b}
+.calendarTileTop { display:flex; justify-content:space-between; align-items:center; gap:7px; padding-bottom:8px; border-bottom:1px solid rgba(21,21,21,.45); }
+.calendarWeek { font:700 clamp(22px,2.3vw,33px)/.9 'Oswald'; letter-spacing:-.04em; }
+.calendarType { font-size:9px; font-weight:800; text-transform:uppercase; letter-spacing:.08em; text-align:right; }
+.calendarTile h3 { font:700 clamp(15px,1.45vw,21px)/1 'Space Grotesk'; letter-spacing:-.045em; margin:11px 0 8px; }
+.calendarTile p { margin:0; font-size:clamp(10px,.92vw,13px); line-height:1.32; font-weight:500; }
+.calendarOutput { margin-top:auto; padding-top:9px; font-size:clamp(9px,.78vw,11px); line-height:1.25; font-weight:800; text-transform:uppercase; letter-spacing:.04em; }
+.calendarOutput:before { content:'↗ '; }
+.calendarTeamStrip { display:flex; align-items:center; justify-content:space-between; gap:15px; border-top:1.5px solid var(--ink); padding-top:8px; font-size:clamp(10px,.88vw,12px); line-height:1.3; }
+.calendarTeamStrip strong { font:700 11px 'Oswald'; letter-spacing:.1em; text-transform:uppercase; }
+.calendarPage .pageBottom { margin-top:0; padding-top:7px; }
+@media(max-width:760px){
+ .calendarPage.active{overflow-y:auto;height:auto;min-height:calc(100vh - 63px)}
+ .calendarHead{align-items:flex-start;flex-direction:column;gap:8px}.calendarDeckNote{max-width:100%}
+ .calendarGrid{flex:none;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:none}.calendarTile{min-height:190px}
+ .calendarTile h3{font-size:19px}.calendarTile p{font-size:12px}.calendarOutput{font-size:10px}
+ .calendarKickoff{align-items:flex-start;flex-direction:column;gap:5px}.calendarTeamStrip{align-items:flex-start;flex-direction:column}
+}
+@media(max-height:760px) and (min-width:761px){.calendarPage.active{gap:7px}.calendarTitleBlock h2{font-size:clamp(34px,4vw,54px);margin-top:6px}.calendarTile{padding:9px 11px}.calendarTile h3{margin:7px 0 5px}.calendarTile p{font-size:11px;line-height:1.2}.calendarOutput{padding-top:5px}.calendarKickoff{padding:6px 11px}}
+</style>
+
+<style>
+/* Week 6: a crisp workboard replaces the photographic card and shows execution at a glance. */
+[data-title="Week 6"] .weekVisual { align-items:center; justify-content:center; overflow:visible; }
+.executionApp { width:100%; max-width:820px; padding:13px; color:#202124; background:#fffdf9; border:1px solid rgba(21,21,21,.12); border-radius:13px; box-shadow:0 12px 30px rgba(77,39,25,.10); font-family:'DM Sans',sans-serif; line-height:1.2; }
+.execAppTop { display:flex; align-items:center; justify-content:space-between; gap:8px; padding:2px 3px 12px; border-bottom:1px solid #ece7df; }
+.execAppName { display:flex; align-items:center; gap:9px; font-weight:800; font-size:clamp(11px,.95vw,14px); }
+.execAppMark { display:grid; grid-template-columns:repeat(2,6px); gap:2px; transform:rotate(-7deg); }
+.execAppMark i { display:block; width:6px; height:6px; border-radius:2px; background:#c91f16; }
+.execAppMark i:nth-child(2){background:#f5bc67}.execAppMark i:nth-child(3){background:#9bc5ab}.execAppMark i:nth-child(4){background:#9db6e7}
+.execAppActions { display:flex; align-items:center; gap:10px; }
+.execDemo { padding:5px 7px; border-radius:5px; background:#fff0e7; color:#a34d35; font-size:8px; font-weight:800; letter-spacing:.07em; white-space:nowrap; }
+.execAvatars { display:flex; align-items:center; padding-left:3px; }
+.execAvatars b { width:20px; height:20px; margin-left:-4px; display:flex; align-items:center; justify-content:center; border:2px solid #fffdf9; border-radius:50%; background:#f1d3bf; color:#3f3430; font-size:8px; }
+.execAvatars b:nth-child(2){background:#d7e6d8}.execAvatars b:nth-child(3){background:#dce4fa}.execAvatars b:nth-child(4){background:#252525;color:#fff}
+.execToolbar { display:flex; align-items:center; justify-content:space-between; gap:8px; padding:11px 3px 12px; font-size:9px; }
+.execToolbar>div { display:flex; align-items:center; gap:11px; min-width:0; white-space:nowrap; }
+.execToolbar strong { font-size:10px; }
+.execTab { color:#8a8985; }
+.execTab.active { color:#252525; border-bottom:2px solid #c91f16; padding-bottom:5px; margin-bottom:-7px; font-weight:800; }
+.execCount { color:#77736d; white-space:nowrap; font-size:9px; }
+.execColumns { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:7px; }
+.execColumn { min-width:0; border-radius:7px; background:#f7f5f1; padding:6px; }
+.execColumn.todo { background:#f2f4f7; }.execColumn.doing { background:#fbf0eb; }.execColumn.review { background:#fbf5e4; }.execColumn.done { background:#eff5ed; }
+.execColumnHead { display:flex; justify-content:space-between; align-items:center; gap:3px; padding:3px 2px 7px; font-size:9px; font-weight:800; }
+.execColumnHead span { display:flex; align-items:center; gap:5px; white-space:nowrap; }
+.execColumnHead i { width:6px; height:6px; display:block; border-radius:50%; background:#9aa4b4; }
+.doing .execColumnHead i { background:#d98c67; }.review .execColumnHead i { background:#d8b04a; }.done .execColumnHead i { background:#6ca17b; }
+.execColumnHead b { color:#8b8982; font-size:8px; }
+.execTask { background:#fff; border:1px solid #eae7e2; border-radius:6px; padding:8px 7px 7px; margin-bottom:7px; min-height:123px; display:flex; flex-direction:column; gap:5px; }
+.execTask:last-child { margin-bottom:0; }
+.execClient { display:flex; flex-direction:column; gap:2px; font-size:9px; font-weight:800; overflow-wrap:anywhere; }
+.execClient span { font-size:7px; color:#999187; letter-spacing:.055em; font-weight:800; }
+.execTask h3 { margin:0; font-size:9px; line-height:1.25; font-weight:700; letter-spacing:-.01em; }
+.execTag { align-self:flex-start; border-radius:4px; font-size:7px; line-height:1; padding:4px 5px; font-weight:800; }
+.execTag.strategy{background:#f8e8d7;color:#895b27}.execTag.research{background:#e8e9f8;color:#4d5999}.execTag.paid{background:#dceafa;color:#2a5a92}.execTag.content{background:#f7e1eb;color:#93476c}.execTag.brand{background:#eee1f7;color:#79509c}.execTag.crm{background:#e5e6f7;color:#5758a1}.execTag.creative{background:#dcefe4;color:#357b54}.execTag.analytics{background:#fff0ca;color:#896720}
+.execDeliverable { border-top:1px solid #f0ede8; padding-top:5px; margin-top:auto; display:flex; flex-direction:column; gap:3px; }
+.execDeliverable small { color:#999187; font-size:6px; letter-spacing:.09em; font-weight:800; }
+.execDeliverable strong { color:#45413c; font-size:8px; line-height:1.2; font-weight:700; overflow-wrap:anywhere; }
+.execTaskFoot { display:flex; align-items:center; gap:5px; margin-top:2px; color:#918b84; font-size:7px; }
+.execInitials { display:inline-flex; align-items:center; justify-content:center; width:17px; height:17px; background:#f3dfd1; border-radius:50%; color:#5d4031; font-size:6px; font-weight:900; }
+.execInitials.blue{background:#d9e4f4;color:#355a89}.execInitials.coral{background:#f4d7cc;color:#8b4d39}.execInitials.green{background:#d9e9d9;color:#3e7047}.execInitials.violet{background:#e9dff4;color:#6b4c87}
+.execResult { display:flex; flex-direction:column; gap:3px; border-top:1px solid #f0ede8; padding-top:5px; margin-top:auto; font-size:7px; color:#888178; }
+.execResult strong { font-size:8px; color:#3d7c4b; }
+.execAppFoot { margin-top:10px; padding:8px 3px 1px; border-top:1px solid #ece7df; display:flex; justify-content:space-between; gap:8px; color:#79736c; font-size:8px; }
+.execAppFoot b { color:#282522; }
+@media (min-width:761px) {
+ [data-title="Week 6"] .weekVisual .executionApp { transform:translateY(-5px); }
+}
+@media (max-width:760px) {
+ .executionApp { padding:9px; border-radius:9px; }
+ .execAppTop { padding-bottom:9px; }.execToolbar { overflow:hidden; }
+ .execToolbar>div { gap:7px; }.execCount { display:none; }
+ .execColumns { gap:4px; }.execColumn { padding:4px; }
+ .execTask { min-height:108px; padding:6px 5px; gap:4px; }
+ .execClient { font-size:8px; }.execTask h3 { font-size:8px; }.execDeliverable strong { font-size:7px; }
+ .execColumnHead { font-size:8px; }.execAppFoot { font-size:7px; }
+}
+@media (max-height:760px) and (min-width:761px) {
+ .executionApp { padding:10px; }.execAppTop { padding-bottom:8px; }.execToolbar { padding:8px 3px; }
+ .execColumns { gap:5px; }.execColumn { padding:5px; }.execTask { min-height:100px; padding:6px; margin-bottom:5px; }
+ .execAppFoot { padding-top:6px; margin-top:7px; }
+}
+</style>
+
+
+<style>
+/* Final fit pass for the project board in the full-screen Week 6 slide. */
+@media (min-width:761px) {
+  [data-title="Week 6"] .executionApp { width:calc(100% + 78px); max-width:780px; flex:0 0 calc(100% + 78px); transform:translate(-12px,-7px); }
+  [data-title="Week 6"] .execTask { min-height:132px; padding:8px; }
+  [data-title="Week 6"] .execClient { font-size:10px; }
+  [data-title="Week 6"] .execTask h3 { font-size:10px; }
+  [data-title="Week 6"] .execTag { font-size:8px; }
+  [data-title="Week 6"] .execDeliverable small { font-size:7px; }
+  [data-title="Week 6"] .execDeliverable strong { font-size:9px; }
+  [data-title="Week 6"] .execTaskFoot { font-size:8px; }
+  [data-title="Week 6"] .execColumnHead { font-size:10px; }
+  [data-title="Week 6"] .pageBottom { height:auto !important; min-height:0 !important; align-items:center !important; flex-direction:row !important; }
+  [data-title="Week 6"] .pageBottom .nav { height:auto !important; min-height:0 !important; align-self:center !important; flex:0 0 auto !important; }
+  [data-title="Week 6"] .pageBottom .nav button { height:auto !important; min-height:0 !important; align-self:center !important; flex:0 0 auto !important; }
+}
+</style>
+
+
+<style>@media (min-width:761px){[data-title="Week 6"] .pageBottom{height:48px!important;min-height:48px!important;display:flex!important;align-items:center!important;flex-direction:row!important;padding-top:7px!important;margin-top:0!important}[data-title="Week 6"] .pageBottom .nav{display:flex!important;align-items:center!important;height:36px!important;min-height:36px!important;width:auto!important;align-self:center!important;flex:0 0 auto!important}[data-title="Week 6"] .pageBottom .nav button{display:inline-flex!important;align-items:center!important;justify-content:center!important;height:36px!important;min-height:36px!important;align-self:center!important;flex:0 0 auto!important;line-height:1!important;padding:9px 16px!important}}</style>
+
+
+<style>
+/* Week 7: give the richer portfolio image room to read while preserving the cutout treatment. */
+.portfolioVisual { aspect-ratio: 3 / 2 !important; }
+.portfolioVisual img {
+  object-fit: contain !important;
+  object-position: center;
+}
+</style>
+
+</head><body><header class="top"><div>Marketing Apprenticeship / Field Guide</div><small>8 weeks · learn by doing</small></header><div class="progress"><span id="bar"></span></div>
+<section class="page heroPage active coverPhotoPage" data-title="Start here">
+<img alt="Sunny, hyperrealistic marketing creative studio cover photograph" class="coverPhoto" src="images/cover.jpg"/>
+<div class="coverOverlay">
+<div class="coverEyebrow">MARKETING APPRENTICESHIP</div>
+<h1>From <span>zero</span><br/>experience to<br/>experienced<br/><span>marketer</span></h1>
+<p>An 8-week immersive marketing apprenticeship<br class="desktopBreak"/> to launch you into your career.</p>
+<div aria-label="What you will do" class="coverPills">
+<span class="pill pillResearch"><b aria-hidden="true">⌕</b> Research</span>
+<span class="pill pillCreative"><b aria-hidden="true">✳</b> Creative work</span>
+<span class="pill pillProjects"><b aria-hidden="true">▤</b> Practical projects</span>
+<span class="pill pillProspecting"><b aria-hidden="true">♧</b> Prospecting</span>
+<span class="pill pillSprints"><b aria-hidden="true">▣</b> Organized job hunt sprints</span>
+</div>
+</div>
+<div class="coverPhotoNav"><button class="next" onclick="go(1)">Start the journey →</button></div>
+</section>
+<section class="page onboard" data-title="Onboarding"><div class="weekLayout"><div class="weekCopy"><div class="weekTop"><span class="weekNo">00</span><span class="weekLabel">Before week one</span></div><h2>Start with the future you want</h2><p class="intro">Picture the marketing work you want to do, the brands you hope to work with, the skills you want to build, and the kind of life you want your career to support.</p><div class="learnLabel">Onboarding exercise</div><ul class="learnList"><li>Visualise your future</li><li>Map your career goals</li><li>Identify what you want to work towards</li><li>Set an intention for the eight weeks</li></ul></div><div class="weekVisual"><div aria-label="Marketing career vision board" class="imageSlot visionCanvas"><img alt="A curated Nigerian marketing career vision board with goals for work, skills, income and community" src="images/onboarding-vision-board.png"/></div></div></div><div class="pageBottom"><small>Onboarding · 00</small><div class="nav"><button onclick="go(0)">← Previous</button><button class="next" onclick="go(2)">Week 1 →</button></div></div></section>
+<section class="page" data-title="Week 1" style="background:#ffb7d7"><div class="weekLayout"><div class="weekCopy"><div class="weekTop"><span class="weekNo">01</span><span class="weekLabel">Week 1 of 8</span></div><h2>Business &amp; Audience Research</h2><p class="intro">Understand how businesses work and how marketing decisions start with research.</p><div class="learnLabel">What you’ll learn and practise</div><ul class="learnList"><li>Business basics</li><li>B2B and B2C</li><li>Industry and category research</li><li>Competitor research</li><li>The 4 Ps of marketing</li><li>Audience and business research</li></ul></div><div class="weekVisual"><div class="imageSlot" data-slot="Week 1 image: Business &amp; Audience Research"><img alt="Week 1 image: Business &amp; Audience Research" src="images/week-1-business-audience-research.png" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0"/></div></div></div><div class="pageBottom"><small>Week 1 · Business &amp; Audience Research</small><div class="nav"><button onclick="go(1)">← Previous</button><button class="next" onclick="go(3)">Next →</button></div></div></section><section class="page" data-title="Week 2" style="background:#c9b8ff"><div class="weekLayout"><div class="weekCopy"><div class="weekTop"><span class="weekNo">02</span><span class="weekLabel">Week 2 of 8</span></div><h2>Content Strategy &amp; Creative Direction</h2><p class="intro">Turn business and audience understanding into a content plan, then direct how it comes to life.</p><div class="learnLabel">What you’ll learn and practise</div><ul class="learnList"><li>Content strategies by industry</li><li>Creative direction</li><li>Content calendars</li><li>Reusable client templates</li><li>Matching content to business goals</li></ul></div><div class="weekVisual"><div class="imageSlot" data-slot="Week 2 image: Content Strategy &amp; Creative Direction"><img alt="Content strategy laptop and stacked books on lavender background" src="images/week-2-content-strategy.png" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0"/></div></div></div><div class="pageBottom"><small>Week 2 · Content Strategy &amp; Creative Direction</small><div class="nav"><button onclick="go(2)">← Previous</button><button class="next" onclick="go(4)">Next →</button></div></div></section><section class="page" data-title="Week 3" style="background:#ffe27a"><div class="weekLayout"><div class="weekCopy"><div class="weekTop"><span class="weekNo">03</span><span class="weekLabel">Week 3 of 8</span></div><h2>Creative, AI and Automation</h2><p class="intro">Make creative assets for different stages of the funnel and use AI to work faster.</p><div class="learnLabel">What you’ll learn and practise</div><ul class="learnList"><li>Flyers that convert</li><li>Creative for different funnel stages</li><li>AI videos and copy</li><li>AI flyers and presentations</li><li>AI-assisted automation</li></ul></div><div class="weekVisual"><div class="imageSlot" data-slot="Week 3 image: Creative, AI and Automation"><img alt="Week 3 image: Creative, AI and Automation" src="images/week-3-creative-ai-automation.png" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0"/></div></div></div><div class="pageBottom"><small>Week 3 · Creative, AI and Automation</small><div class="nav"><button onclick="go(3)">← Previous</button><button class="next" onclick="go(5)">Next →</button></div></div></section><section class="page" data-title="Week 4" style="background:#bcebd0"><div class="weekLayout"><div class="weekCopy"><div class="weekTop"><span class="weekNo">04</span><span class="weekLabel">Week 4 of 8</span></div><h2>Pitching &amp; Funnel Optimization</h2><p class="intro">Package your skills into an offer and build a funnel that helps you create professional opportunities.</p><div class="learnLabel">What you’ll learn and practise</div><ul class="learnList"><li>Create an offer</li><li>Define your services</li><li>Find your unique selling point</li><li>Pitch yourself</li><li>Funnel optimisation</li></ul></div><div class="weekVisual"><div class="imageSlot" data-slot="Week 4 image: Pitching &amp; Funnel Optimization"><img alt="Week 4 image: Pitching &amp; Funnel Optimization" src="images/week-4-pitching-funnel.png" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0"/></div></div></div><div class="pageBottom"><small>Week 4 · Pitching &amp; Funnel Optimization</small><div class="nav"><button onclick="go(4)">← Previous</button><button class="next" onclick="go(6)">Next →</button></div></div></section><section class="page" data-title="Week 5" style="background:#b8e0ff"><div class="weekLayout"><div class="weekCopy"><div class="weekTop"><span class="weekNo">05</span><span class="weekLabel">Week 5 of 8</span></div><h2>Creating Professional Opportunities</h2><p class="intro">Learn how to identify potential opportunities and approach people with a plan.</p><div class="learnLabel">What you’ll learn and practise</div><ul class="learnList"><li>Lead prospecting in depth</li><li>Research businesses and people</li><li>Pitching and outreach</li><li>Opportunity-tracking template</li><li>Build a consistent prospecting habit</li></ul></div><div class="weekVisual"><div class="imageSlot" data-slot="Week 5 image: Creating Professional Opportunities"><img alt="Week 5 image: Creating Professional Opportunities" src="images/week-5-professional-opportunities.png" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0"/></div></div></div><div class="pageBottom"><small>Week 5 · Creating Professional Opportunities</small><div class="nav"><button onclick="go(5)">← Previous</button><button class="next" onclick="go(7)">Next →</button></div></div></section><section class="page" data-title="Week 6" style="background:#ff9d83"><div class="weekLayout"><div class="weekCopy"><div class="weekTop"><span class="weekNo">06</span><span class="weekLabel">Week 6 of 8</span></div><h2>Marketing Execution</h2><p class="intro">Work on practical marketing projects, learn with other marketers, and get feedback along the way.</p><div class="learnLabel">What you’ll learn and practise</div><ul class="learnList"><li>Marketing strategy</li><li>Paid ads and funnel projects</li><li>UGC and consumer insights</li><li>Creative and brand strategy</li><li>Teamwork and feedback from founders</li></ul></div><div class="weekVisual">
+  <div class="executionApp" role="img" aria-label="Sample marketing project board showing tasks across four workflow stages, different clients, marketing disciplines, deliverables and reported outcomes">
+    <div class="execAppTop">
+      <div class="execAppName"><span class="execAppMark"><i></i><i></i><i></i><i></i></span><span>Marketing execution</span></div>
+      <div class="execAppActions"><span class="execDemo">SAMPLE BOARD</span><span class="execAvatars"><b>H</b><b>A</b><b>J</b><b>+</b></span></div>
+    </div>
+    <div class="execToolbar"><div><strong>All client projects</strong><span class="execTab active">Board</span><span class="execTab">Timeline</span><span class="execTab">Results</span></div><span class="execCount">8 tasks · 6 clients</span></div>
+    <div class="execColumns">
+      <div class="execColumn todo">
+        <div class="execColumnHead"><span><i></i>To do</span><b>02</b></div>
+        <article class="execTask">
+          <div class="execClient">EJ Cuisine <span>FOOD</span></div>
+          <h3>Launch campaign brief</h3>
+          <div class="execTag strategy">Strategy</div>
+          <div class="execDeliverable"><small>DELIVERABLE</small><strong>Campaign plan</strong></div>
+          <div class="execTaskFoot"><span class="execInitials">HE</span><small>Brief needed</small></div>
+        </article>
+        <article class="execTask">
+          <div class="execClient">Covico <span>SERVICES</span></div>
+          <h3>Audience research</h3>
+          <div class="execTag research">Research</div>
+          <div class="execDeliverable"><small>DELIVERABLE</small><strong>Audience snapshot</strong></div>
+          <div class="execTaskFoot"><span class="execInitials blue">AO</span><small>Research</small></div>
+        </article>
+      </div>
+      <div class="execColumn doing">
+        <div class="execColumnHead"><span><i></i>In progress</span><b>02</b></div>
+        <article class="execTask">
+          <div class="execClient">Vendaw <span>E-COMMERCE</span></div>
+          <h3>Paid social creative</h3>
+          <div class="execTag paid">Paid media</div>
+          <div class="execDeliverable"><small>DELIVERABLE</small><strong>3 ad variations</strong></div>
+          <div class="execTaskFoot"><span class="execInitials coral">SU</span><small>Asset build</small></div>
+        </article>
+        <article class="execTask">
+          <div class="execClient">Forestance <span>CREATIVE</span></div>
+          <h3>Social content batch</h3>
+          <div class="execTag content">Content</div>
+          <div class="execDeliverable"><small>DELIVERABLE</small><strong>6 content assets</strong></div>
+          <div class="execTaskFoot"><span class="execInitials green">JA</span><small>Production</small></div>
+        </article>
+      </div>
+      <div class="execColumn review">
+        <div class="execColumnHead"><span><i></i>In review</span><b>02</b></div>
+        <article class="execTask">
+          <div class="execClient">ITML <span>COMMUNITY</span></div>
+          <h3>Brand messaging</h3>
+          <div class="execTag brand">Brand</div>
+          <div class="execDeliverable"><small>DELIVERABLE</small><strong>Messaging deck</strong></div>
+          <div class="execTaskFoot"><span class="execInitials violet">KE</span><small>Feedback</small></div>
+        </article>
+        <article class="execTask">
+          <div class="execClient">Rova <span>FINTECH</span></div>
+          <h3>Customer email flow</h3>
+          <div class="execTag crm">Lifecycle</div>
+          <div class="execDeliverable"><small>DELIVERABLE</small><strong>Email sequence</strong></div>
+          <div class="execTaskFoot"><span class="execInitials">HE</span><small>Final review</small></div>
+        </article>
+      </div>
+      <div class="execColumn done">
+        <div class="execColumnHead"><span><i></i>Done</span><b>02</b></div>
+        <article class="execTask">
+          <div class="execClient">EJ Cuisine <span>FOOD</span></div>
+          <h3>Campaign assets</h3>
+          <div class="execTag creative">Creative</div>
+          <div class="execDeliverable"><small>DELIVERABLE</small><strong>8 assets delivered</strong></div>
+          <div class="execResult"><span>Campaign pack</span><strong>Complete ✓</strong></div>
+        </article>
+        <article class="execTask">
+          <div class="execClient">Vendaw <span>E-COMMERCE</span></div>
+          <h3>Performance report</h3>
+          <div class="execTag analytics">Analytics</div>
+          <div class="execDeliverable"><small>RESULTS TRACKED</small><strong>CTR · sign-ups · spend</strong></div>
+          <div class="execResult"><span>Report</span><strong>Submitted ✓</strong></div>
+        </article>
+      </div>
+    </div>
+    <div class="execAppFoot"><span><b>6 disciplines</b> across real client-style projects</span><span>Plan → Create → Review → Measure</span></div>
+  </div>
+</div><div class="pageBottom"><small>Week 6 · Marketing Execution</small><div class="nav"><button onclick="go(6)">← Previous</button><button class="next" onclick="go(8)">Next →</button></div></div></section><section class="page" data-title="Week 7" style="background:#ffd9c7"><div class="weekLayout"><div class="weekCopy"><div class="weekTop"><span class="weekNo">07</span><span class="weekLabel">Week 7 of 8</span></div><h2>Portfolio &amp; CV Update</h2><p class="intro">Turn your skills and project experience into materials you can use when pursuing roles and clients.</p><div class="learnLabel">What you’ll learn and practise</div><ul class="learnList"><li>Custom portfolio support</li><li>ATS-friendly CV</li><li>Present your contribution</li><li>Show your thinking and work</li><li>Prepare your professional materials</li></ul></div><div class="weekVisual"><div class="imageSlot portfolioVisual" data-slot="Week 7 portfolio and CV cutout"><img alt="Laptop showing a creative portfolio beside a CV and project sheets" src="images/week-7-portfolio-cv.png" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0"/></div></div></div><div class="pageBottom"><small>Week 7 · Portfolio &amp; CV Update</small><div class="nav"><button onclick="go(7)">← Previous</button><button class="next" onclick="go(9)">Next →</button></div></div></section><section class="page" data-title="Week 8" style="background:#d8ef8b"><div class="weekLayout"><div class="weekCopy"><div class="weekTop"><span class="weekNo">08</span><span class="weekLabel">Week 8 of 8</span></div><h2>Job Hunt Sprints &amp; Interview Preparation</h2><p class="intro">Practise applying, tracking opportunities, and preparing for interviews across different industries.</p><div class="learnLabel">What you’ll learn and practise</div><ul class="learnList"><li>Industry-based virtual interviews</li><li>Job hunt sprints</li><li>Research and application tracker</li><li>Record contacts and application routes</li><li>Interview practice every weekend</li></ul></div><div class="weekVisual"><div class="imageSlot" data-slot="Week 8 image: Job Hunt Sprints &amp; Interview Preparation"><img alt="Week 8 image: Job Hunt Sprints &amp; Interview Preparation" src="images/week-8-job-hunt-interviews.png" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0"/></div></div></div><div class="pageBottom"><small>Week 8 · Job Hunt Sprints &amp; Interview Preparation</small><div class="nav"><button onclick="go(8)">← Previous</button><button class="next" onclick="go(10)">Meet your team →</button></div></div></section><section class="page collab" data-title="The team"><div class="weekLayout"><div class="weekCopy"><div class="eyebrow">The people around you matter</div><h2>The marketing team <em>behind your marketing</em></h2><p>Good marketing takes a team. Learn alongside other marketers, share ideas, collaborate on practical projects, give and receive feedback, and pass useful opportunities around.</p><p>Founder involvement and project opportunities will depend on the projects available during the program.</p><div class="tags"><span class="tag">Shared learning</span><span class="tag">Team projects</span><span class="tag">Feedback</span><span class="tag">Opportunities</span></div></div><div class="weekVisual"><div class="imageSlot" data-slot="Team image: collaborative group of early-career marketers working together"><img alt="Team image: collaborative group of early-career marketers working together" src="images/team.png" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0"/></div></div></div><div class="pageBottom"><small>Beyond the curriculum</small><div class="nav"><button onclick="go(9)">← Previous</button><button class="next" onclick="go(11)">See what you’ll build →</button></div></div></section>
+<section class="page finalPage calendarPage" data-title="From Learning to Doing">
+<div class="calendarHead"><div class="calendarTitleBlock"><div class="eyebrow">Your eight-week journey</div><h2>From Learning to Doing.</h2></div><div class="calendarDeckNote">Understand the business. Make the work. Show what you can do. Then pursue opportunities.</div></div>
+<div class="calendarKickoff"><strong>Before Week 1 · Vision mapping</strong><span>Picture the career you want, set your goals, and decide what you want to work towards.</span></div>
+<div aria-label="Eight-week marketing apprenticeship calendar" class="calendarGrid">
+<article class="calendarTile"><div class="calendarTileTop"><span class="calendarWeek">WEEK 01</span><span class="calendarType">Research</span></div><h3>Business &amp; Audience</h3><p>Explore business models, industries, competitors, the 4 Ps and the people each business serves.</p><div class="calendarOutput">Research brief</div></article>
+<article class="calendarTile"><div class="calendarTileTop"><span class="calendarWeek">WEEK 02</span><span class="calendarType">Plan</span></div><h3>Content Strategy</h3><p>Turn business and audience insight into a content plan, calendar and creative direction.</p><div class="calendarOutput">Content plan + direction</div></article>
+<article class="calendarTile"><div class="calendarTileTop"><span class="calendarWeek">WEEK 03</span><span class="calendarType">Make</span></div><h3>Creative, AI &amp; Automation</h3><p>Create funnel-based flyers, copy, video and presentations. Use AI and automation to support the work.</p><div class="calendarOutput">Campaign assets</div></article>
+<article class="calendarTile"><div class="calendarTileTop"><span class="calendarWeek">WEEK 04</span><span class="calendarType">Package</span></div><h3>Pitch &amp; Funnel</h3><p>Shape an offer, define your services and USP, practise pitching yourself, and improve the funnel.</p><div class="calendarOutput">Offer + pitch</div></article>
+<article class="calendarTile"><div class="calendarTileTop"><span class="calendarWeek">WEEK 05</span><span class="calendarType">Connect</span></div><h3>Professional Opportunities</h3><p>Research businesses and people, write outreach, and build a consistent prospecting routine.</p><div class="calendarOutput">Outreach + prospect tracker</div></article>
+<article class="calendarTile"><div class="calendarTileTop"><span class="calendarWeek">WEEK 06</span><span class="calendarType">Execute</span></div><h3>Marketing Execution</h3><p>Collaborate on practical work across strategy, paid ads, UGC, consumer insights and creative or brand strategy.</p><div class="calendarOutput">Project work + feedback</div></article>
+<article class="calendarTile"><div class="calendarTileTop"><span class="calendarWeek">WEEK 07</span><span class="calendarType">Show</span></div><h3>Portfolio &amp; CV</h3><p>Document your contribution, explain your thinking, and prepare portfolio material and an ATS-friendly CV.</p><div class="calendarOutput">Portfolio + CV</div></article>
+<article class="calendarTile"><div class="calendarTileTop"><span class="calendarWeek">WEEK 08</span><span class="calendarType">Pursue</span></div><h3>Job Hunt &amp; Interviews</h3><p>Join job-hunt sprints, track applications and contacts, and practise industry-based interviews.</p><div class="calendarOutput">Application tracker + interview practice</div></article>
+</div>
+<div class="calendarTeamStrip"><span><strong>All the way through</strong> · Share ideas, give and receive feedback, and collaborate where suitable projects are available.</span><span>Learn → Make → Show → Pursue</span></div>
+<div class="pageBottom"><small>The end is a starting point</small><div class="nav"><button onclick="go(11)">← Previous</button><button class="next" onclick="go(0)">Back to the beginning ↺</button></div></div>
+</section>
+<script>
+const pages=[...document.querySelectorAll('.page')];let current=0;function go(n){current=Math.max(0,Math.min(pages.length-1,n));pages.forEach((p,i)=>p.classList.toggle('active',i===current));document.body.classList.toggle('cover-active',current===0);document.getElementById('bar').style.width=((current+1)/pages.length*100)+'%';window.scrollTo({top:0,behavior:'smooth'});document.title=pages[current].dataset.title+' | Marketing Apprenticeship'}document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')go(current+1);if(e.key==='ArrowLeft')go(current-1)});
+
+go(0);
+</script>
+<style>
+/* Refined cutouts: keep the board and Meet scene directly on their page backgrounds. */
+.onboard .weekVisual .imageSlot.visionCanvas,
+.collab .weekVisual .imageSlot {
+  display:block !important; min-height:0 !important; height:auto !important; aspect-ratio:auto !important;
+  background:transparent !important; border:0 !important; box-shadow:none !important; padding:0 !important;
+  overflow:visible !important; transform:none !important;
+}
+.onboard .weekVisual .imageSlot.visionCanvas img,
+.collab .weekVisual .imageSlot img {
+  display:block; position:relative !important; inset:auto !important; width:100% !important; height:auto !important;
+  object-fit:contain !important; object-position:center; border:0 !important; box-shadow:none !important;
+}
+</style>
+
+<style>
+/* Week 7: portfolio and CV image treated as one restrained editorial cutout. */
+.weekVisual .imageSlot.portfolioVisual { width:112%; max-width:720px; min-height:0; height:auto; aspect-ratio:auto; padding:0; background:transparent; border:0; box-shadow:none; transform:none; }
+.weekVisual .imageSlot.portfolioVisual img { display:block; position:relative; inset:auto; width:100%; height:auto; object-fit:contain; border:0; box-shadow:none; }
+@media (max-width:760px) { .weekVisual .imageSlot.portfolioVisual { width:100%; max-width:100%; } }
+</style>
+</body></html>
